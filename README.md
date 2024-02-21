@@ -1,6 +1,7 @@
 # Time Series Analysis of Starbucks Stocks (1992-06-26 to 2023-12-05)
+This repository is dedicated to the time series analysis of Starbucks stock prices from June 26, 1992, to December 5, 2023.Time series analysis is a statistical approach for analyzing time-ordered data to uncover patterns, trends, and seasonal variations. It plays a crucial role in forecasting, decision-making, and strategic planning across various domains.
 
-This repository is dedicated to the time series analysis of Starbucks stock prices from June 26, 1992, to December 5, 2023. Time series analysis is a statistical approach for analyzing time-ordered data to uncover patterns, trends, and seasonal variations. It plays a crucial role in forecasting, decision-making, and strategic planning across various domains.
+![Screenshot](image_tes/Stock.png) 
 
 ## Importance of Time Series Analysis
 
@@ -9,6 +10,9 @@ This repository is dedicated to the time series analysis of Starbucks stock pric
 * Seasonality Detection: Recognize and adjust for seasonal variations, key for inventory and marketing.
 * Anomaly Detection: Spot outliers indicating potential issues or extraordinary events.
 * Causal Analysis: Understand the impact of time-dependent variables on each other.
+
+
+  ![Screenshot](image_tes/xyz.png) 
 
 ## Project Focus: Starbucks Stock Analysis
 
@@ -41,11 +45,14 @@ Forecasting Starbucks stock prices using the Triple Exponential Smoothing method
   
 * Given these parameters and their implications, the fitted model suggests that the Starbucks stock price series, over the period analyzed, is heavily influenced by the most recent observations with very little weight given to trends or seasonal patterns. This could mean that the stock price is quite volatile, with rapid changes that do not follow a predictable trend or seasonal cycle.
 
+![Screenshot](image_tes/AvrP.png) 
+
 * The MAPE value represents the model's average prediction error of 1.54%, signifying robust predictive capabilities.
 
 ## Future Predictions
 
 * Forecast Period: 300 Days
+![Screenshot](image_tes/TES_pre.png) 
 
 ## Disclaimer
 
