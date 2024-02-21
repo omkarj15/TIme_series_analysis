@@ -23,12 +23,30 @@ This repository is dedicated to the time series analysis of Starbucks stock pric
 This project aims to provide comprehensive insights into Starbucks' stock performance using time series analysis, helping investors and analysts make informed decisions based on historical data patterns.
 
 ## Getting Started
+# 1. Triple Exponential Smoothing Method for Time Series Forecasting :
 
-### Prerequisites
+Forecasting Starbucks stock prices using the Triple Exponential Smoothing method. The model parameters have been optimized, achieving a Mean Absolute Percentage Error (MAPE) of 1.54, indicating a high level of accuracy in predicting stock prices.
 
-* Python 3.x
-* [List any required libraries or dependencies here]
+## Key Results
 
-### Installing
+* Optimized Parameters:
+  * Smoothing Level (α): 0.959
+  * Smoothing Trend (β): 2.11e-09
+  * Smoothing Seasonal (γ): 5.65e-12
+  * Initial Level: 29.41
+  * Initial Trend: 0.0066
+  * Initial Seasons: nan
+  * MAPE Value: 1.54
+ 
+  
+* Given these parameters and their implications, the fitted model suggests that the Starbucks stock price series, over the period analyzed, is heavily influenced by the most recent observations with very little weight given to trends or seasonal patterns. This could mean that the stock price is quite volatile, with rapid changes that do not follow a predictable trend or seasonal cycle.
 
-1. Clone the repository:
+* The MAPE value represents the model's average prediction error of 1.54%, signifying robust predictive capabilities.
+
+## Future Predictions
+
+* Forecast Period: 300 Days
+
+## Disclaimer
+
+Predicting stock prices inherently involves uncertainties, and past performance is not indicative of future results. Make investment decisions responsibly and consider a diverse set of information.
