@@ -57,3 +57,27 @@ Forecasting Starbucks stock prices using the Triple Exponential Smoothing method
 ## Disclaimer
 
 Predicting stock prices inherently involves uncertainties, and past performance is not indicative of future results. Make investment decisions responsibly and consider a diverse set of information.
+
+# 2. Starbucks Stock Price Forecasting with ARIMA
+
+This repository is dedicated to forecasting Starbucks stock prices using the AutoARIMA model from the pmdarima library. The model selection process is automated, optimizing for accuracy in predicting stock prices.
+
+## Model Details
+
+After an automated search process, the chosen ARIMA model is ARIMA(1,0,1)(0,0,0)[0] with an intercept term. This model was selected based on the Akaike Information Criterion (AIC), indicating a trade-off between model fit and complexity.
+
+* Fit Time: The model fitting process took approximately 71.299 seconds.
+* Mean Absolute Percentage Error (MAPE): The MAPE value for the model is 1.6999%, reflecting the average prediction error.
+  
+## Model Selection Process
+
+The model selection process involves a stepwise search to minimize the Akaike Information Criterion (AIC). Various ARIMA configurations were evaluated, and the best-fitting model was chosen based on its ability to balance accuracy and simplicity.
+
+## Forecasting for Future 300 Days
+
+Leveraging the selected ARIMA model, the repository provides forecasts for Starbucks stock prices for the next 300 days. Users can explore these forecasts to gain insights into potential future stock price movements.
+
+## Disclaimer
+
+It's crucial to acknowledge that predicting stock prices involves inherent uncertainties. Past performance is not indicative of future results. Users are advised to use the forecasts responsibly and consider a diverse set of information when making investment decisions.
+
