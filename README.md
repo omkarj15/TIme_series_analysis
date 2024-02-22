@@ -65,7 +65,7 @@ After an automated search process, the chosen ARIMA model is ARIMA(1,0,1)(0,0,0)
 * Fit Time: The model fitting process took approximately 71.299 seconds.
 * Mean Absolute Percentage Error (MAPE): The MAPE value for the model is 1.6999%, reflecting the average prediction error.
 
-![Screenshot](image_AR/A_P.png) 
+![Screenshot](image_AR/A_P_sm.png) 
   
 ## Model Selection Process
 
