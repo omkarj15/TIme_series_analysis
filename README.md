@@ -100,7 +100,37 @@ Leveraging the selected SARIMA model, the repository provides forecasts for Seri
 
 ![Screenshot](image_AR/F.png)
 
-## Disclaimer
+# Time Series Forecasting with LSTM
+This repository contains code for time series forecasting using Long Short-Term Memory (LSTM) neural networks. The project follows a sequential process outlined below:
 
+# Steps
+## Data Preprocessing: 
+The "minmax" scaler is applied to the closing column of the dataset.
+
+## Data Splitting: 
+Training Size: 5292, Testing Size: 1323
+
+## Data Preparation for LSTM: 
+Reshape the dataset into input-output pairs for LSTM modeling.
+Time step: 100
+X_train, y_train : (5191, 100), (5191,) X_test, y_test : (1222, 100), (1222,)
+
+## LSTM Model Architecture: 
+The LSTM model architecture consists of two LSTM layers followed by a dense layer.
+Total params: 30,651
+
+## Model Training: 
+Train the model with the following configuration:
+Epochs: 50
+Batch size: 64
+Loss: Mean Squared Error (MSE)
+### Model Evaluation: Validation loss and training loss are monitored during training.
+Training Loss: Epoch 50: 1.7244e-04
+Validation Loss: Epoch 50: 2.8019e-04
+### Mean Absolute Percentage Error (MAPE): 1.8581
+## Future Forecasting: 
+Perform a 30-day future forecasting using the trained LSTM model.
+
+## Disclaimer
 It's crucial to acknowledge that predicting stock prices involves inherent uncertainties. Past performance is not indicative of future results. Users are advised to use the forecasts responsibly and consider a diverse set of information when making investment decisions.
 
