@@ -65,7 +65,7 @@ After an automated search process, the chosen ARIMA model is ARIMA(1,0,1)(0,0,0)
 * Fit Time: The model fitting process took approximately 71.299 seconds.
 * Mean Absolute Percentage Error (MAPE): The MAPE value for the model is 1.6999%, reflecting the average prediction error.
 
-![Screenshot](image_AR/A_P.png) 
+![Screenshot](image_AR/SMA_P.png) 
   
 ## Model Selection Process
 
@@ -75,7 +75,7 @@ The model selection process involves a stepwise search to minimize the Akaike In
 
 Leveraging the selected ARIMA model, the repository provides forecasts for Starbucks stock prices for the next 300 days. Users can explore these forecasts to gain insights into potential future stock price movements.
 
-![Screenshot](image_AR/p.png) 
+![Screenshot](image_AR/A_P.png) 
 
 ## Disclaimer
 
