@@ -119,10 +119,11 @@ The project follows a sequential process outlined below:
 1. **Data Preprocessing**: The "minmax" scaler is applied to the closing column of the dataset.
 
 2. **Data Splitting**:
-   Training Size: 5292,
+   Training Size: 5292
+   
    Testing Size: 1323
 
-3. **Data Preparation for LSTM**: Reshape the dataset into input-output pairs for LSTM modeling.
+4. **Data Preparation for LSTM**: Reshape the dataset into input-output pairs for LSTM modeling.
 
    Time step: 100
    
@@ -130,12 +131,12 @@ The project follows a sequential process outlined below:
    
    X_test, y_test : (1222, 100), (1222,)
 
-4. **LSTM Model Architecture**:
+5. **LSTM Model Architecture**:
    The LSTM model architecture consists of two LSTM layers followed by a dense layer.
 
-   Total params: 30,651
+   ![Screenshot](image_LSTM/archi.jpeg) 
 
-5. **Model Training**:
+7. **Model Training**:
    Train the model with the following configuration:
    
    Epochs: 50
@@ -144,18 +145,25 @@ The project follows a sequential process outlined below:
    
    Loss: Mean Squared Error (MSE)
 
-6. **Model Evaluation**:
+8. **Model Evaluation**:
    Validation loss and training loss are monitored during training.
 
    Training Loss: Epoch 50: 1.7244e-04
    
    Validation Loss: Epoch 50: 2.8019e-04
+
+     ![Screenshot](image_LSTM/val.png)
    
-   Mean Absolute Percentage Error (MAPE): 1.8581
+ 9. **Training_Testing Prediction**:
+     
+    ![Screenshot](image_LSTM/A_P.png)
+     
+       Mean Absolute Percentage Error (MAPE): 1.8581
 
-9. **Future Forecasting**:
-  Perform a 30-day future forecasting using the trained LSTM model
-
+11. **Future Forecasting**:
+    Perform a 30-day future forecasting using the trained LSTM model
+    
+  ![Screenshot](image_LSTM/download.png)
 
 ## Disclaimer
 It's crucial to acknowledge that predicting stock prices involves inherent uncertainties. Past performance is not indicative of future results. Users are advised to use the forecasts responsibly and consider a diverse set of information when making investment decisions.
