@@ -58,6 +58,10 @@ Forecasting Starbucks stock prices using the Triple Exponential Smoothing method
 
 This repository is dedicated to forecasting Starbucks stock prices using the AutoARIMA model from the pmdarima library. The model selection process is automated, optimizing for accuracy in predicting stock prices.
 
+## Model Selection Process
+
+The model selection process involves a stepwise search to minimize the Akaike Information Criterion (AIC). Various ARIMA configurations were evaluated, and the best-fitting model was chosen based on its ability to balance accuracy and simplicity.
+
 ## Model Details
 
 After an automated search process, the chosen ARIMA model is ARIMA(1,0,1)(0,0,0)[0] with an intercept term. This model was selected based on the Akaike Information Criterion (AIC), indicating a trade-off between model fit and complexity.
@@ -67,15 +71,34 @@ After an automated search process, the chosen ARIMA model is ARIMA(1,0,1)(0,0,0)
 
 ![Screenshot](image_AR/A_P_sm.png) 
   
-## Model Selection Process
-
-The model selection process involves a stepwise search to minimize the Akaike Information Criterion (AIC). Various ARIMA configurations were evaluated, and the best-fitting model was chosen based on its ability to balance accuracy and simplicity.
-
 ## Forecasting for Future 300 Days
 
 Leveraging the selected ARIMA model, the repository provides forecasts for Starbucks stock prices for the next 300 days. Users can explore these forecasts to gain insights into potential future stock price movements.
 
 ![Screenshot](image_AR/P.png) 
+
+# 3. Serimax Stock Price Forecasting with Seasonal ARIMA (SARIMA)
+
+This repository focuses on forecasting Serimax stock prices using the Seasonal AutoARIMA model from the pmdarima library. The automated model selection process resulted in the best-fitting SARIMA model with the following details:
+
+## Model Selection Process
+
+The SARIMA model selection process involves a stepwise search to minimize the Akaike Information Criterion (AIC). Various SARIMA configurations were evaluated, and the best-fitting model was chosen based on its ability to balance accuracy and simplicity.
+
+## Model Details
+
+After an automated stepwise search process, the chosen SARIMA model is ARIMA(1,0,1)(0,0,0)[12] intercept. This model was selected based on the Akaike Information Criterion (AIC), indicating a trade-off between model fit and complexity.
+
+* Fit Time: The model fitting process took approximately 207.638 seconds.
+* Mean Absolute Percentage Error (MAPE): The MAPE value for the model is 1.54%, reflecting the average prediction error.
+  
+![Screenshot](image_AR/A_P_sm.png)
+
+## Forecasting for Future 300 Days
+
+Leveraging the selected SARIMA model, the repository provides forecasts for Serimax stock prices for the next 300 days. Users can explore these forecasts to gain insights into potential future stock price movements.
+
+![Screenshot](image_AR/F.png)
 
 ## Disclaimer
 
